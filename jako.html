@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harjoitellaan aritmetiikkaa</title>
+    <link rel="stylesheet" href="css/custom-style.css">
+    <script src="src/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><img id="kuvat" src="img/calculator.png" alt="laskimen logo">Harjoitellaan aritmetiikkaa</h1>
+
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Ohjeet</a></li>
+                    <li><a href="plus.html" >Plus</a></li>
+                    <li><a href="miinus.html">Miinus</a></li>
+                    <li><a href="kerto.html">Kerto</a></li>
+                    <li><a href="#" class="highlight">Jako</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container"> 
+            <h1 id = "harjoitus"><img id="kuvat" src="img/jako.png" alt="jako">Jakolasku</h1>
+            <p>Tällä sivulla voit harjoitella <span class="highlight">jakolaskuja</span>. Painikkeella saat aina uuden laskutehtävän.</p>
+            <form> 
+                <div >
+                     <button class="nappi" type="submit" value="Submit">Uusi kysymys</button>
+                </div>
+            </form>  
+
+            <p>Paljonko on:
+                  
+            <table id=kysymysAlue>
+                <tr>
+                  <td id="eka"></td>
+                  <td id="merkki"></td>
+                  <td id="toka"></td>
+                  <td id="vastaus"></td>
+                </tr>
+            </table> 
+            </p>
+
+            <input type="text" id="vastausAlue" name="vastausAlue" placeholder="0" autofocus>
+            <p id="oikeinVaiEi"></p>
+            
+            <button class="nappi" onclick="Tarkistus()">Tarkista</button>
+         </div>
+    </section>
+    
+
+    <footer>
+        <div class="container">
+            <p>
+                Marama, Copyright &copy; 2021
+            </p>
+
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> 
+                from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
