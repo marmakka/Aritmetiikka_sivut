@@ -25,7 +25,8 @@ function uusiLasku() {
     vastaukset.value=""
     vastaukset.focus();
     let ekaLuku = getRandomInt(11);
-    const tokaLuku = getRandomInt(11);
+    let tokaLuku = getRandomInt(11);
+    
     if (harjoitus.textContent==="Yhteenlasku") 
             {   merkkiElementti.textContent = " + ";
                 vastaus = ekaLuku + tokaLuku;
@@ -39,7 +40,8 @@ function uusiLasku() {
                 vastaus = ekaLuku * tokaLuku;
             };
     if (harjoitus.textContent==="Jakolasku")
-            {   merkkiElementti.textContent = " / ";
+            {   merkkiElementti.textContent = " / ";            
+                while(tokaLuku===0){tokaLuku = getRandomInt(11);}
                 const jaettava = ekaLuku * tokaLuku;
                 ekaLuku = jaettava;
             };
